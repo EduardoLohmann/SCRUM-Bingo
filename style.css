@@ -1,0 +1,68 @@
+body{
+    background-image: url("images/background1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.justText{
+    
+    text-align: center;
+    background-color: rgba(136, 187, 255, 0.5)
+}
+
+#howItWorks{
+    background-color: rgba(250, 235, 215), o.5;
+    color: midnightblue;
+    text-align: center;
+}
+
+#howItWorksList{
+    background-color: rgba(250, 235, 215, 0.5);
+    color: midnightblue;
+    padding-left: 38%;
+    
+}
+
+.title{
+    
+    animation: titleAnim;
+    animation-play-state: running;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    width: auto;
+    height: 30px;
+    background-color: black; 
+    
+}
+
+.titleText{
+    background-color: black; 
+    color: white;
+    text-align: center;
+    font-size: 40px;
+
+    animation: rainbowFontColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes titleAnim{
+    from{transform: rotateX(0deg);}
+    to{transform: rotateX(360deg);}
+}
+
+@keyframes rainbowFontColor {
+    0%{color: rgb(255, 0, 0)}   
+    17%{color: rgb(255, 255, 0)}
+    34%{color: rgb(0, 255, 0)}
+    51%{color: rgb(0, 255, 255)}
+    68%{color: rgb(0, 0, 255)}
+    85%{color: rgb(255, 0, 255)}
+    100%{color: rgb(255, 0, 0)}
+}
