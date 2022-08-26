@@ -10,44 +10,53 @@
     
 </head>
 <body>
-    <div>
-        <div class="title"></div>
+    <div id="title">
+        <div class="titleAnim"></div>
         <div class = "titleText">Scrum Bingo</div>
-        <div class="title"></div>
+        <div class="titleAnim"></div>
     </div>
     <br>
-    <p class="justText">
-        This little project is all about bringing some spice into your daily meetings.<br>
-        We all know that each person tends to repeat him/herself quite a lot, and that <br>
-        get somewhat tiring when you have your own tasks and issues to work on. <br>
-    </p>
-    <p class="justText">
-        So, since you probably can't just leave the meeting, it'd be nice to have some <br>
-        way to at least make this time a little more casual. This is where the bingo comes in!
-    </p>
-   
-    <h2 id="howItWorks">How it works</h2>
-    <ul id="howItWorksList">
-        <li>Insert records with people's names</li>
-        <li>For each person, add words they are used to use a lot when they speak</li>
-        <ul>
-            <li>You can delete and modify records you alredy recorded</li>
-            <li>Words can reference a specific person, or everyone (use it for really generic terms like 'Meeting' or 'Code') </li>
-            <li>Some generic words are already built-in to ease your life, but feel free to modify however you like</li>
+    <div id="section1">
+        <p class="justText">
+            This little project is all about bringing some spice into your daily meetings.<br>
+            We all know that each person tends to repeat him/herself quite a lot, and that <br>
+            get somewhat tiring when you have your own tasks and issues to work on. <br>
+        </p>
+        <p class="justText">
+            So, since you probably can't just leave the meeting, it'd be nice to have some <br>
+            way to at least make this time a little more casual. This is where the bingo comes in!
+        </p>
+    </div>
+    
+    <div id="section2">
+        <h2 id="howItWorks">How it works</h2>
+        <ul id="howItWorksList">
+            <li>Insert records with people's names</li>
+            <li>For each person, add words they are used to use a lot when they speak</li>
+            <ul>
+                <li>You can delete and modify records you alredy recorded</li>
+                <li>Words can reference a specific person, or everyone (use it for really generic terms like 'Meeting' or 'Code') </li>
+                <li>Some generic words are already built-in to ease your life, but feel free to modify however you like</li>
+            </ul>
+            <li>Generate a bingo card</li>
+            <li>During the meeting, mark up any words said by them with the mouse</li>
+            <li>Thats it! See if you can score a bingo and share a screenshot with your friends!</li>
         </ul>
-        <li>Generate a bingo card</li>
-        <li>During the meeting, mark up any words said by them with the mouse</li>
-        <li>Thats it! See if you can score a bingo and share a screenshot with your friends!</li>
-    </ul>
+    </div>
 
-    <p class="justText">
-        Now, a word of advice. Use this at your own discretion. If you have trouble concentrating in meetings <br>
-        or you're new at your job, maybe its not the best idea to seek distractions like this.
-    </p>
+    <div id="section3">
+        <p class="justText">
+            Now, a word of advice. If you have trouble concentrating in meetings or you're new at your job, <br>
+            maybe its not the best idea to seek distractions like this. So, use this at your own discretion.
+        </p>
 
-    <button>Register people</button>
-    <button>Register words</button>
-    <button>Generate card</button>
+        <div class="buttons">
+            <button disabled>Register people</button>
+            <button disabled>Register words</button>
+            <button disabled>Generate card</button>
+        </div>
+        
+    </div>
 
     <script>
         

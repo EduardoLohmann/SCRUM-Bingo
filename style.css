@@ -5,31 +5,104 @@ body{
     background-position: center;
     background-size: cover;
 
+    animation: backGroundAnimation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 75s;
+
 }
 
 .justText{
     
     text-align: center;
-    background-color: rgba(136, 187, 255, 0.5)
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    
+}
+
+#section1{
+    background-color: rgba(136, 187, 255, 0.9);
+    border: 5px solid;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    opacity: 0%;
+    
+    animation: fadeInRight;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+    
+    
+}
+
+#section2{
+    background-color: rgba(255, 181, 112, 1);
+    border: 5px solid;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    opacity: 0%;
+
+    animation: fadeInLeft;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+
+}
+
+#section3{
+    background-color: rgba(177, 136, 255, 0.9);
+    border: 5px solid;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    opacity: 0%;
+    
+    animation: fadeInRight;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+
+}
+
+.buttons{
+    width: fit-content;
+    margin: auto;
+
 }
 
 #howItWorks{
-    background-color: rgba(250, 235, 215), o.5;
     color: midnightblue;
     text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 40px;
 }
 
 #howItWorksList{
-    background-color: rgba(250, 235, 215, 0.5);
     color: midnightblue;
-    padding-left: 38%;
+    padding-left: 10%;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
     
 }
 
-.title{
+.titleAnim{
     
     animation: titleAnim;
-    animation-play-state: running;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -37,6 +110,12 @@ body{
     width: auto;
     height: 30px;
     background-color: black; 
+}
+
+#title{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     
 }
 
@@ -50,6 +129,8 @@ body{
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    font-family: 'Trebuchet MS', sans-serif;
+
 }
 
 @keyframes titleAnim{
@@ -65,4 +146,44 @@ body{
     68%{color: rgb(0, 0, 255)}
     85%{color: rgb(255, 0, 255)}
     100%{color: rgb(255, 0, 0)}
+}
+
+@keyframes fadeInRight {
+    
+    0%{opacity: 0%; transform: translateX(50px);}
+    100%{opacity: 90%; transform: translateX(0px);}
+    
+}
+
+@keyframes fadeInLeft {
+    
+    0%{opacity: 0%; transform: translateX(-50px);}
+    100%{opacity: 90%; transform: translateX(0px);}
+    
+}
+
+@keyframes backGroundAnimation {
+    00%{background-image: url("images/background1.jpg");}
+    12%{background-image: url("images/background1.jpg");}
+
+    14%{background-image: url("images/background2.jpg");}
+    26%{background-image: url("images/background2.jpg");}
+
+    28%{background-image: url("images/background3.jpg");}
+    40%{background-image: url("images/background3.jpg");}
+
+    42%{background-image: url("images/background4.jpg");}
+    54%{background-image: url("images/background4.jpg");}
+
+    56%{background-image: url("images/background5.jpg");}
+    68%{background-image: url("images/background5.jpg");}
+
+    70%{background-image: url("images/background6.jpg");}
+    82%{background-image: url("images/background6.jpg");}
+
+    84%{background-image: url("images/background7.jpg");}
+    98%{background-image: url("images/background7.jpg");}
+
+    100%{background-image: url("images/background1.jpg");}  
+
 }
