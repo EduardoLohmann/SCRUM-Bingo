@@ -34,7 +34,7 @@ body{
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
     animation-duration: 2s;
-    animation-delay: 1s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
 
     
@@ -55,7 +55,7 @@ body{
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
     animation-duration: 2s;
-    animation-delay: 1.2s;
+    animation-delay: 2.2s;
     animation-fill-mode: forwards;
 
 }
@@ -74,7 +74,7 @@ body{
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
     animation-duration: 2s;
-    animation-delay: 1.4s;
+    animation-delay: 2.4s;
     animation-fill-mode: forwards;
 
 }
@@ -100,42 +100,45 @@ body{
     
 }
 
-.titleAnim{
-    
-    animation: titleAnim;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    
-    width: auto;
-    height: 30px;
-    background-color: black; 
+.placeholder{
+    margin-top: 15%;
 }
 
 #title{
     position: sticky;
     top: 0px;
     z-index: 1;
-    
 }
 
 .titleText{
-    background-color: black; 
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.titleScrum{
+    color: rgb(59, 151, 255);
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.titleBingo{
 
     animation: rainbowFontColor;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     font-family: 'Trebuchet MS', sans-serif;
-
-}
-
-@keyframes titleAnim{
-    from{transform: rotateX(0deg);}
-    to{transform: rotateX(360deg);}
 }
 
 @keyframes rainbowFontColor {
